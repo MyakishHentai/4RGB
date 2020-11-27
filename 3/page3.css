@@ -1,0 +1,28 @@
+
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  min-height: 100vh;
+}
+
+.grid > div {
+  font-size: 5vw;
+  text-align: center;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Third part */
+.grid > div:first-child{
+  box-shadow: 0 5px 0 #800000;
+}
+.grid > div:last-child{
+  box-shadow: 0 5px 0 #787878;
+}
+.grid > div:nth-child(2n) {
+  box-shadow: 0 5px 0 #ff3d3d;
+}
