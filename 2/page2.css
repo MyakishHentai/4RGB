@@ -1,0 +1,25 @@
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  min-height: 100vh;
+}
+
+.grid > div {
+  font-size: 5vw;
+  text-align: center;
+  border: blue;
+  border-width: 5px;
+  border-style: solid;
+}
+
+/* Second part */
+.grid > div:nth-child(2n) {
+  background-color: #800000;
+}
+.grid > div:nth-child(2n-1) {
+  background-color: #787878;
+}
